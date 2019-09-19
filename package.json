@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/racheldoran/liri-node-app#readme",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "liri": "^1.0.1"
   }
 }
