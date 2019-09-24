@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/racheldoran/liri-node-app#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "dotenv": "^8.1.0",
-    "liri": "^1.0.1"
+    "liri": "^1.0.1",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {}
 }
