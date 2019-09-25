@@ -2,15 +2,13 @@
 require("dotenv").config();
 var fs = require("fs");
 var keys = require("./keys.js");
-var spotify = new Spotify(keys.spotify);
 var axios = require("axios");
 var userInput = process.argv[2];
 var inputTopic = process.argv[3];
-
 var moment = require('moment'); 
 moment().format();
 
-axios.get(ombdApi).then(
+axios.get(ombd).then(
   function (movieResponse) {
     console.log("Title: " + movieResponse.data.Title);
     console.log("Year: " + movieResponse.data.Year);
@@ -33,6 +31,7 @@ axios.get(bandsInTown).then(
   }
 
 );
+var spotify = new Spotify(keys.spotify);
 
 spotify.request(spotify, function (error, songResponse) {
   if (error) {
