@@ -5,6 +5,7 @@ var keys = require("./keys.js");
 var axios = require("axios");
 var userInput = process.argv[2];
 var inputTopic = process.argv[3];
+var Spotify = require('node-spotify-api');
 var moment = require('moment'); 
 moment().format();
 
@@ -36,16 +37,13 @@ axios.get("https://rest.bandsintown.com/artists/" + "?app_id=13e695f4ae46f16b55a
 );
 var spotify = new Spotify(keys.spotify);
 
-spotify.request(spotify, function (error, songResponse) {
-  if (error) {
-    return console.log(error);
+spotify.search({ type: 'track', query: 'If Not For You' }, function(err, data) {
+  if (err) {
+    return console.log('Error occurred: ' + err);
   }
-  console.log("Artist: " + songResponse.tracks.items[0].artists[0].name);
-  console.log("Song: " + songResponse.tracks.items[0].name);
-  console.log("URL: " + songResponse.tracks.items[0].preview_url);
-  console.log("Album: " + songResponse.tracks.items[0].album.name);
+ 
+console.log(data); 
 });
-
 
 function doWhatInfo() {
 
