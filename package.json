@@ -22,6 +22,7 @@
     "dotenv": "^8.1.0",
     "liri": "^1.0.1",
     "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1",
     "omdb": "^0.8.0",
     "spotify": "^0.3.0",
     "twitter": "^1.7.1"

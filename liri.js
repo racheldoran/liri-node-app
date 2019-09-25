@@ -8,8 +8,10 @@ var inputTopic = process.argv[3];
 var moment = require('moment'); 
 moment().format();
 
-axios.get(ombd).then(
-  function (movieResponse) {
+axios.get("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy")
+.then(
+  function(response) {
+    console.log("The movie's rating is: " + response.data.imdbRating);
     console.log("Title: " + movieResponse.data.Title);
     console.log("Year: " + movieResponse.data.Year);
     console.log("Rated: " + movieResponse.data.imdbRating);
@@ -22,7 +24,8 @@ axios.get(ombd).then(
 );
 
 
-axios.get(bandsInTown).then(
+axios.get("https://rest.bandsintown.com/artists/" + "?app_id=13e695f4ae46f16b55ac1d88f280ef60")
+.then(
   function (bandResponse) {
     console.log("Venue: " + bandResponse.data[0].venue.name);
     console.log("City: " + bandResponse.data[0].venue.city);
