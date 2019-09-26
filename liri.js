@@ -9,18 +9,18 @@ var Spotify = require('node-spotify-api');
 var moment = require('moment'); 
 moment().format();
 
-axios.get("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy")
+axios.get("http://www.omdbapi.com/?t=titanic&y=&plot=short&apikey=trilogy")
 .then(
   function(response) {
     console.log("The movie's rating is: " + response.data.imdbRating);
-    console.log("Title: " + movieResponse.data.Title);
-    console.log("Year: " + movieResponse.data.Year);
-    console.log("Rated: " + movieResponse.data.imdbRating);
-    console.log("Country: " + movieResponse.data.Country);
-    console.log("Language: " + movieResponse.data.Language);
-    console.log("Plot: " + movieResponse.data.Plot);
-    console.log("Actors: " + movieResponse.data.Actors);
-    console.log("Rotten Tomatoes: " + movieResponse.data.Ratings[1].Value);
+    console.log("Title: " + response.data.Title);
+    console.log("Year: " + response.data.Year);
+    console.log("Rated: " + response.data.imdbRating);
+    console.log("Country: " + response.data.Country);
+    console.log("Language: " + response.data.Language);
+    console.log("Plot: " + response.data.Plot);
+    console.log("Actors: " + response.data.Actors);
+    console.log("Rotten Tomatoes: " + response.data.Ratings[1].Value);
   }
 );
 
@@ -32,18 +32,20 @@ axios.get("https://rest.bandsintown.com/artists/" + "?app_id=13e695f4ae46f16b55a
     console.log("City: " + bandResponse.data[0].venue.city);
     console.log(moment(bandResponse.data[0].datetime).format("MM/DD/YYYY"));
     console.log(bandsInTown);
+
   }
 
 );
 var spotify = new Spotify(keys.spotify);
 
-spotify.search({ type: 'track', query: 'If Not For You' }, function(err, data) {
-  if (err) {
-    return console.log('Error occurred: ' + err);
-  }
- 
-console.log(data); 
-});
+spotify
+  .request('https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx')
+  .then(function(data) {
+    console.log(data); 
+  })
+  .catch(function(err) {
+    console.error('Error occurred: ' + err); 
+  });
 
 function doWhatInfo() {
 

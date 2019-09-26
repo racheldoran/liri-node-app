@@ -19,6 +19,7 @@
   "dependencies": {
     "api": "^1.0.0",
     "axios": "^0.19.0",
+    "bandsintown": "^1.0.1",
     "dotenv": "^8.1.0",
     "liri": "^1.0.1",
     "moment": "^2.24.0",
