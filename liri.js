@@ -25,7 +25,7 @@ axios.get("http://www.omdbapi.com/?t=titanic&y=&plot=short&apikey=trilogy")
 );
 
 
-axios.get("https://rest.bandsintown.com/artists/311/events?app_id=codingbootcamp")
+axios.get("https://rest.bandsintown.com/artists/celine+dion/events?app_id=codingbootcamp")
 .then(
   function (bandResponse) {
     console.log("Venue: " + bandResponse.data[0].venue.name);
