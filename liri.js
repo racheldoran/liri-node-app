@@ -25,12 +25,12 @@ axios.get("http://www.omdbapi.com/?t=titanic&y=&plot=short&apikey=trilogy")
 );
 
 
-axios.get("https://rest.bandsintown.com/artists/" + "?app_id=13e695f4ae46f16b55ac1d88f280ef60")
+axios.get("https://rest.bandsintown.com/artists/311/events?app_id=codingbootcamp")
 .then(
   function (bandResponse) {
-    console.log("Venue: " + bandResponse.data[0].venue.name);
-    console.log("City: " + bandResponse.data[0].venue.city);
-    console.log(moment(bandResponse.data[0].datetime).format("MM/DD/YYYY"));
+    console.log("Venue: " + response.data[0].venue.name);
+    console.log("City: " + response.data[0].venue.city);
+    console.log(moment(response.data[0].datetime).format("MM/DD/YYYY"));
     console.log(bandsInTown);
 
   }
