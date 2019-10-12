@@ -1,0 +1,63 @@
+Please Enter a command
+Please Enter a command
+Please Enter a command
+
+---------------------------------------------------
+
+Date: 11/22/2019
+Name: Florida Man Music Festival
+City: Orlando
+Country: United States
+
+---------------------------------------------------
+
+Country: FL
+
+---------------------------------------------------
+
+Date: 11/30/2019
+City: Mexico City
+
+---------------------------------------------------
+
+Name: KnotFest meets ForceFest Mexico 2019
+
+---------------------------------------------------
+
+Country: Mexico
+Date: 12/14/2019
+City: Minneapolis
+Country: MN
+Name: 93X Nutcracker
+Country: United States
+
+---------------------------------------------------
+
+
+---------------------------------------------------
+
+Name: 101 WKQX - The Nights We Stole Christmas
+Country: IL
+City: Chicago
+Date: 12/15/2019
+
+---------------------------------------------------
+
+Country: United States
+Please Enter a command
+
+---------------------------------------------------
+
+Title: Titanic
+Release Year: 1997
+IMDB Rating: 7.8
+Country: USA
+Language: English, Swedish, Italian
+Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+
+---------------------------------------------------
+
+Rotten Tomatoes Rating: 89%
+Please Enter a command
+Please Enter a command
